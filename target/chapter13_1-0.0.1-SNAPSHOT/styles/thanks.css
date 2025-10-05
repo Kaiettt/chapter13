@@ -1,100 +1,90 @@
-/* Reset một chút */
+/* Global reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    min-height: 100vh;
 }
 
+/* Center box */
 .container {
-    width: 100%;
-    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
 .thank-box {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 40px 30px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
     text-align: center;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .icon {
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 3rem;
     margin-bottom: 15px;
 }
 
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #2d3e50;
+}
+
 .subtitle {
-    font-size: 16px;
-    margin-bottom: 25px;
-    color: #f0f0f0;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
 }
 
 .info {
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
 }
 
 .info .label {
     font-weight: 700;
-    color: #fff;
+    color: #444;
+    display: inline-block;
+    width: 110px;
 }
 
 .info .value {
-    margin-left: 10px;
-    color: #ffd700;
+    color: #666;
 }
 
 .note {
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #e0e0e0;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #666;
 }
 
+/* Return button */
 .return-form button {
-    background: #ffd700;
-    color: #1a1a1a;
+    background: #4e9af1;
     border: none;
-    padding: 12px 30px;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 50px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background 0.25s ease;
 }
 
 .return-form button:hover {
-    background: #fff;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-}
-
-/* Responsive */
-@media (max-width: 500px) {
-    .thank-box {
-        padding: 30px 20px;
-    }
-    h1 {
-        font-size: 24px;
-    }
-    .icon {
-        font-size: 50px;
-    }
+    background: #357ed9;
 }
