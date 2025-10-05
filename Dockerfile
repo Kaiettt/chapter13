@@ -2,7 +2,7 @@
 FROM tomcat:9.0-jdk17
 
 # Metadata
-LABEL maintainer="leekhoa0409@gmail.com"
+LABEL maintainer="kietnak584@gmail.com"
 
 # Xoá webapps mặc định của Tomcat
 RUN rm -rf /usr/local/tomcat/webapps/*
