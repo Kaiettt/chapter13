@@ -1,0 +1,90 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Center box */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.thank-box {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #2d3e50;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.info {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.info .label {
+    font-weight: 700;
+    color: #444;
+    display: inline-block;
+    width: 110px;
+}
+
+.info .value {
+    color: #666;
+}
+
+.note {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* Return button */
+.return-form button {
+    background: #4e9af1;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+.return-form button:hover {
+    background: #357ed9;
+}

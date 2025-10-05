@@ -1,0 +1,100 @@
+/* Reset một chút */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.thank-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #f0f0f0;
+}
+
+.info {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.info .label {
+    font-weight: 700;
+    color: #fff;
+}
+
+.info .value {
+    margin-left: 10px;
+    color: #ffd700;
+}
+
+.note {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+.return-form button {
+    background: #ffd700;
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.return-form button:hover {
+    background: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .thank-box {
+        padding: 30px 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .icon {
+        font-size: 50px;
+    }
+}
